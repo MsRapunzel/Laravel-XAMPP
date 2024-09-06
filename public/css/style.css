@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.header-text {
+    font-size: 4.75rem;
+    line-height: 1.5;
+}
+
+.main-text {
+    font-size: 2rem;
+    line-height: 1;
+}
+.spacer {
+    height: 50px;
+}
