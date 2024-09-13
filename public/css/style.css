@@ -2,6 +2,35 @@ body {
     background: linear-gradient(#e66465, #9198e5);
 }
 
+header,
+footer {
+    background-color: #333333;
+    padding: 15px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 .header-text {
     font-size: 4.75rem;
     line-height: 1.5;
@@ -11,6 +40,7 @@ body {
     font-size: 2rem;
     line-height: 1;
 }
+
 .spacer {
     height: 50px;
 }

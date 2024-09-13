@@ -123,4 +123,6 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'warningDevelopmentStage' => 'Hello! This page is in development stage, come back later!',
+
 ];
