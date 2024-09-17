@@ -1,28 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RoutesController;
+use App\Http\Controllers\RedirectController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home', function () {
-    return view('home');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/signin', function () {
-    return view('signin');
-});
-
-Route::get('/login', function () {
-    return view('login');
-});
-
+Route::get("/", [RoutesController::class, 'welcome']);
+Route::get('/home', [RoutesController::class, 'home']);
+Route::get('/about', [RoutesController::class, 'about']);
+Route::get('/contact', [RoutesController::class, 'contact']);
+Route::get('/signin', [RoutesController::class, 'signIn']);
+Route::get('/login', [RoutesController::class, 'logIn']);
+Route::get('/user/{id}', [RoutesController::class, 'user']);
+Route::get('/redirect', RedirectController::class);
